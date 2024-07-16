@@ -83,7 +83,7 @@ top: 34px;
 .main-content{
     width: 100%;
     min-height: 100vh;
-    
+
     }
     .header {
         background-color: #fff;
@@ -98,13 +98,13 @@ top: 34px;
     border-bottom: 2px black;
     filter: drop-shadow(0px -1px 5px #3b3b3b);
     }
-    
-    
-    
+
+
+
     .header img{
         width: 265px;
         height: 65px;
-    
+
     }
     .nav-ul{
         height: 70px;
@@ -112,7 +112,7 @@ top: 34px;
         display: flex;
         align-items: center;
         margin-left: 12%;
-    
+
     }
     .nav-list{
         padding: 8px 12px;
@@ -123,12 +123,12 @@ top: 34px;
     .border{
     width: 1.5px;
     height: 80px;
-    
+
     background-color: rgba(0, 0, 0, 0.3);
     }
-    
+
     .profile{
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,11 +137,11 @@ top: 34px;
         right: 70px;
         border-radius: 50%;
     }
-    
+
     .profile-dropdown{
         min-width: 20px;
         position: relative;
-    
+
     }
 
     .nav-menu{
@@ -150,9 +150,9 @@ top: 34px;
         padding: 0.2em 0.5em;
         background: #ffffff;
         border: none;
-    
+
         border-radius: 0.2em;
-    
+
         position: absolute;
         top: 5.6rem;
         left: 4.5rem;
@@ -161,36 +161,36 @@ top: 34px;
         opacity: 0;
         display: none;
         transition: 0.5s ease-in-out;
-    
+
         z-index: 1;
     }
-    
+
     .nav-menu li{
         border-radius: 0.2em;
         color: rgb(0, 0, 0);
         padding: 0.7em 0.5em;
         margin: 0.3em 0;
-    
+
         cursor: pointer;
         transition: 0.5s ease-in-out;
-    
+
     }
     .nav-menu.menu-open li:hover{
-    
+
         background: #afafafb3;
-    
+
     }
     .nav-menu.menu-open{
         opacity: 1;
         pointer-events: auto;
     }
-    
+
     .menu-open{
-    
+
         display: block;
         opacity: 1;
     }
-    
+
     .tail{
         position: absolute;
     left: 50%;
@@ -198,7 +198,7 @@ top: 34px;
     transform: rotate(180deg);
         width: 10px;
         height: 10px;
-    
+
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         border-top: 6px solid #afafafb3;
@@ -206,9 +206,9 @@ top: 34px;
     }
 .view_form {
     padding-top: 180px;
-    
+
     padding-left: 315px;
-    
+
     color: 6px solid #132f57;
 }
 .view_form .box {
@@ -220,7 +220,7 @@ top: 34px;
     padding: 20px 40px;
     border-radius: 10px;
 	box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
-	
+
 }
 .view_form .box table{
     width: 100%;
@@ -232,7 +232,7 @@ top: 34px;
 	border-spacing:0;
 	box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
 	border:1px solid black;
-	
+
 }
 .view_form .box table,td,th{
     	border-bottom: 1px solid black;
@@ -241,18 +241,18 @@ top: 34px;
         padding: 15px;
 		border-radius: 10px;
 		border-collapse: collapse;
-		
+
 }
 
 
 .box .view td,tr a{
     text-decoration: underline;
     color: #3FA2F6;
-}	
+}
 
 .view_form .box .login {
     padding-top: 25px;
-    padding-left: 70%; 
+    padding-left: 70%;
 }
 .view_form .box .login button{
     background-color: #b4b4b4;
@@ -262,7 +262,7 @@ top: 34px;
     box-shadow: 0 0.2em 0.5em rgba(19, 16, 16, 0.2);
     border: none;
 	margin-left: 100px;
-    
+
 }
 .view_form .box .login button a{
 	color:#fff;
@@ -279,4 +279,23 @@ top: 34px;
 }
 .view_form .box .login button a:hover{
 	color: black;
+}
+.select{
+	width: 6.5rem;
+text-align: center;
+transition: all 0.5s;
+border-radius: 0.5rem;
+	height: 1.5rem;
+	background-color: #d9d9d9;
+	border: none;
+
+
+}
+.green{
+	background-color: rgb(5, 181, 5);
+	color: white;
+}
+.red{
+	background-color: red;
+	color: white;
 }
