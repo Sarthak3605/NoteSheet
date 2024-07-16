@@ -21,7 +21,7 @@
                     <div class="sidebar-border"></div>
                     <li><a href="approvenotesheet.html" target="_self">APPROVAL NOTESHEETS</a></li>
                     <div class="sidebar-border"></div>
-    
+
                 </ul>
             </div>
             <div class="main_content">
@@ -39,12 +39,12 @@
                             <li>DEPARTMENT</li><span>COMPUTER SCIENCE ENGINEERING</span>
                         </div>
                     </ul>
-    
+
                         <div class="profile profile-dropdown ">
                         <img src="./1486485581-account-audience-person-customer-profile-user_81164.svg" alt="profile">
-    
-                    <div class="caret select "></div>
-    
+
+
+
                         <ul class="nav-menu">
                             <div class="tail"></div>
                             <a href="viewprofile.html" target="_self" ><li>View Profile</li></a>
@@ -75,67 +75,90 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<div class="view">
-									<td><a href=""></a></td></div>
+
+									<td ><select class="select" name="select" >
+										<option value="select" >Select</option>
+										<option value="approve" class="approve" >Approve</option>
+										<option value="deny" class="deny" >Deny</option>
+
+									</select></td>
                                 <td></td>
 								<td></td>
-								
+
 							</tr>
 							<tr>
 								<td></td>
-								
+
 								<td></td>
-								
+
 								<td></td>
-								<div class="view">
-									<td><a href=""></a></td></div>
+
+								<td ><select class="select" name="select" >
+									<option value="select" >Select</option>
+									<option value="approve" class="approve" >Approve</option>
+									<option value="deny" class="deny" >Deny</option>
+
+								</select></td>
                                 <td></td>
-                                <td></td>    
+                                <td></td>
 								</div>
 							</tr>
 							<tr>
 								<td></td>
 								<td></td>
 						        <td></td>
-								<div class="view">
-									<td><a href=""></a></td>
-								</div>
+
+								<td ><select class="select" name="select" >
+									<option value="select" >Select</option>
+									<option value="approve" class="approve" >Approve</option>
+									<option value="deny" class="deny" >Deny</option>
+
+								</select></td>
+
                                 <td></td>
-                                <td></td>  
+                                <td></td>
 							</tr>
 							<tr>
 								<td></td>
 								<td></td>
 								<td></td>
-								<div class="view">
-									<td><a href=""></a></td>
-								</div>
+
+								<td ><select class="select" name="select" >
+									<option value="select" >Select</option>
+									<option value="approve" class="approve" >Approve</option>
+									<option value="deny" class="deny" >Deny</option>
+
+								</select></td>
+
                                 <td></td>
-                                <td></td>  
+                                <td></td>
 							</tr>
 						</tbody>
 					</table>
 					<div class="login">
 						<button><a href="Dashboard.html" target="_self"> EXIT </a></button>
 						</div>
-					
+
 					</div>
-						
+
 					</div>
-					
-				
+
+
 			</div>
         </div>
-		
+
 	</form>
-	
-	
+
+
     </body>
 	<script>
 
-		
+
 document.addEventListener('DOMContentLoaded', () => {
 const profileDropdown = document.querySelector(".profile-dropdown");
+const approve = document.querySelector('.select');
+
+
         const profileMenu = profileDropdown.querySelector('.nav-menu');
 
         profileDropdown.addEventListener('click', () => {
@@ -148,6 +171,21 @@ const profileDropdown = document.querySelector(".profile-dropdown");
         profileMenu.classList.remove('menu-open');
     }
 });
+
+approve.addEventListener('change', () => {
+        if (approve.value === 'approve') {
+            approve.classList.toggle('green');
+        } else {
+            approve.classList.remove('green');
+        }
+		if(approve.value === 'deny'){
+			approve.classList.toggle('red');
+		}
+		else {
+            approve.classList.remove('red');
+        }
+    });
+
 });
 
 
